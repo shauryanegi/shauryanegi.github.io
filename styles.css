@@ -442,12 +442,46 @@ em {
     z-index: 1;
 }
 
+/* Hero Animations */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 2px var(--accent-primary),
+            0 0 40px rgba(167, 139, 250, 0.2),
+            0 0 80px rgba(167, 139, 250, 0.1);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 3px var(--accent-primary),
+            0 0 60px rgba(167, 139, 250, 0.35),
+            0 0 100px rgba(167, 139, 250, 0.2);
+    }
+}
+
 .hero-greeting {
     font-size: var(--text-lg);
     font-weight: var(--font-medium);
     color: var(--accent-primary);
     margin-bottom: var(--space-4);
     letter-spacing: 0.05em;
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.1s;
 }
 
 .hero-name {
@@ -460,6 +494,9 @@ em {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.25s;
 }
 
 .hero-title {
@@ -467,6 +504,9 @@ em {
     font-weight: var(--font-medium);
     color: var(--text-secondary);
     margin-bottom: var(--space-6);
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.4s;
 }
 
 .hero-description {
@@ -475,6 +515,9 @@ em {
     max-width: 560px;
     line-height: var(--leading-relaxed);
     margin-bottom: var(--space-10);
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.55s;
 }
 
 .hero-description .highlight {
@@ -486,6 +529,9 @@ em {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-4);
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.7s;
 }
 
 /* Hero Visual */
@@ -523,6 +569,9 @@ em {
         0 0 80px rgba(167, 139, 250, 0.1);
     transition: box-shadow var(--transition-base);
     filter: grayscale(10%) contrast(1.05);
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease-out forwards, glowPulse 4s ease-in-out infinite;
+    animation-delay: 0.4s, 1.5s;
 }
 
 .profile-image:hover {
@@ -530,6 +579,7 @@ em {
         0 0 0 3px var(--accent-primary),
         0 0 60px rgba(167, 139, 250, 0.35),
         0 0 100px rgba(167, 139, 250, 0.15);
+    animation-play-state: running, paused;
 }
 
 /* Gradient overlay for seamless blend */
