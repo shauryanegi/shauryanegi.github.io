@@ -509,27 +509,43 @@ em {
 }
 
 .profile-image {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid transparent;
-    background:
-        linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
-        var(--gradient-accent) border-box;
-    box-shadow: var(--glow-accent);
-    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    object-position: center top;
+    border: none;
+    box-shadow:
+        0 0 0 2px var(--accent-primary),
+        0 0 40px rgba(167, 139, 250, 0.2),
+        0 0 80px rgba(167, 139, 250, 0.1);
+    transition: box-shadow var(--transition-base);
+    filter: grayscale(10%) contrast(1.05);
 }
 
 .profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 60px rgba(167, 139, 250, 0.3);
+    box-shadow:
+        0 0 0 3px var(--accent-primary),
+        0 0 60px rgba(167, 139, 250, 0.35),
+        0 0 100px rgba(167, 139, 250, 0.15);
+}
+
+/* Gradient overlay for seamless blend */
+.profile-image-container::after {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center,
+            transparent 55%,
+            var(--bg-primary) 100%);
+    pointer-events: none;
 }
 
 @media (min-width: 768px) {
     .profile-image {
-        width: 320px;
-        height: 320px;
+        width: 340px;
+        height: 340px;
     }
 }
 
