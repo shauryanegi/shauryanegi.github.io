@@ -172,6 +172,12 @@
         <section class="section experience" id="experience">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
+                <p class="experience-intro">
+                    My career began in operations—managing logistics for ecological assets. That taught me one thing:
+                    <strong>manual workflows are the enemy of scale</strong>. Since then, I've dedicated my work to
+                    building
+                    intelligent systems that automate complex decision-making.
+                </p>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
@@ -181,17 +187,25 @@
                                 <span class="timeline-company">Arya.ai (Aurionpro Group)</span>
                                 <span class="timeline-period">Apr 2025 – Present</span>
                             </div>
+                            <p class="timeline-narrative">
+                                Leading GenAI strategy for enterprise BFSI products. The core challenge: banks need AI
+                                that works
+                                under strict compliance constraints, not demo-ware that breaks in production.
+                            </p>
                             <ul class="timeline-points">
-                                <li>Architected ReAct-based Agentic RAG pipeline for credit memos using hybrid retrieval
-                                    and Cross-Encoder re-ranking; slashed reporting lifecycle by <strong>85%</strong> (3
-                                    weeks → 3 days)</li>
-                                <li>Steered technical strategy for 3 enterprise GenAI products; implemented Model
-                                    Context Protocol (MCP) reducing custom integration boilerplate by
-                                    <strong>60%</strong>
+                                <li><strong>Agentic RAG for Credit Memos:</strong> Corporate loan approvals required
+                                    analysts to spend 3 weeks
+                                    compiling memos. I architected a ReAct-based pipeline with hybrid retrieval
+                                    (Cross-Encoders + web search)
+                                    that cut this to 3 days—an <strong>85% reduction</strong>.</li>
+                                <li><strong>Multi-tenant Inference Architecture:</strong> Designed a vLLM + Kubernetes
+                                    serving layer achieving
+                                    99.9% uptime and 20% higher throughput for enterprise clients.</li>
+                                <li><strong>LLM Benchmarking for Compliance:</strong> Evaluated 8 foundation models
+                                    (Dense vs MoE) and built a
+                                    Human-in-the-Loop eval framework that reduced hallucination rates from 23% to
+                                    <strong>4%</strong>.
                                 </li>
-                                <li>Benchmarked 8 Dense and MoE models (Llama-3, Mistral) for BFSI compliance; built
-                                    HITL eval framework reducing hallucinations from 23% to <strong>4%</strong> (F1:
-                                    0.72 → 0.89)</li>
                             </ul>
                         </div>
                     </div>
@@ -201,16 +215,28 @@
                             <div class="timeline-header">
                                 <h3 class="timeline-role">Senior Data Scientist</h3>
                                 <span class="timeline-company">Arya.ai (Aurionpro Group)</span>
-                                <span class="timeline-period">May 2024 – Mar 2025</span>
+                                <span class="timeline-period">May 2024 – Apr 2025</span>
                             </div>
+                            <p class="timeline-narrative">
+                                Focused on financial forecasting and LLM optimization. The key insight: not every
+                                problem needs
+                                an LLM—sometimes the best system is a hybrid of heuristics and ML.
+                            </p>
                             <ul class="timeline-points">
-                                <li>Architected segmented cash-flow forecasting system with routing layer for
-                                    deterministic vs stochastic transactions; improved accuracy by <strong>18%</strong>
-                                </li>
-                                <li>Led monthly business reviews with C-suite demonstrating <strong>35%</strong>
-                                    decision-making efficiency gains from GenAI integration</li>
-                                <li>Fine-tuned Llama-3.1 adapters on synthetic data; optimized serving via
-                                    vLLM/PagedAttention achieving <strong>22%</strong> P99 latency reduction</li>
+                                <li><strong>Segmented Forecasting Engine:</strong> Cash-flow prediction was failing
+                                    because the model
+                                    treated all transactions equally. I designed a routing layer that separates
+                                    deterministic (recurring)
+                                    from stochastic payments, improving accuracy by <strong>18%</strong>.</li>
+                                <li><strong>Knowledge Distillation:</strong> Fine-tuned Llama-3.1 adapters using
+                                    synthetic data distilled from
+                                    larger models (with expert validation). Optimized serving via vLLM + PagedAttention
+                                    for <strong>22%</strong>
+                                    lower P99 latency.</li>
+                                <li><strong>Strategic Leadership:</strong> Led monthly reviews with C-suite, translating
+                                    AI capabilities into
+                                    business outcomes—demonstrating <strong>35%</strong> efficiency gains from GenAI
+                                    integration.</li>
                             </ul>
                         </div>
                     </div>
@@ -222,14 +248,39 @@
                                 <span class="timeline-company">Arya.ai (Aurionpro Group)</span>
                                 <span class="timeline-period">Jan 2022 – Apr 2024</span>
                             </div>
+                            <p class="timeline-narrative">
+                                Built the data products that became core revenue drivers. The goal: make complex
+                                document processing
+                                invisible to end users.
+                            </p>
                             <ul class="timeline-points">
-                                <li>Scaled Bank-Statement-Analyzer API to 18 countries; processed <strong>1M+
-                                        docs/month</strong> with 98% extraction accuracy, displacing 40% manual review
+                                <li><strong>Bank Statement Analyzer:</strong> Scaled to 18 countries, processing
+                                    <strong>1M+ documents/month</strong>
+                                    with 98% extraction accuracy. Displaced 40% of manual review workload.
                                 </li>
-                                <li>Developed Text-to-SQL engine for complex BFSI schemas using few-shot prompting;
-                                    achieved <strong>85%</strong> query success rate, driving 30% user engagement growth
-                                </li>
+                                <li><strong>Text-to-SQL Interface:</strong> Non-technical users struggled with complex
+                                    BFSI schemas. Built a
+                                    natural language layer using few-shot prompting and schema
+                                    linking—<strong>85%</strong> query success rate,
+                                    30% engagement growth.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Technical Mentor</h3>
+                                <span class="timeline-company">DeepLearning.AI</span>
+                                <span class="timeline-period">Aug 2021 – Present</span>
+                            </div>
+                            <p class="timeline-narrative">
+                                Selected as a mentor for Andrew Ng's Deep Learning Specialization. I guide a global
+                                community
+                                through neural networks, CNNs, and Transformers—debugging vectorization logic, backprop
+                                calculus,
+                                and convergence issues. Teaching forces clarity of thought.
+                            </p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -237,345 +288,356 @@
                         <div class="timeline-content">
                             <div class="timeline-header">
                                 <h3 class="timeline-role">Technical Analyst</h3>
-                                <span class="timeline-company">IBM (Client: Etihad Airways)</span>
+                                <span class="timeline-company">IBM • Client: Etihad Airways</span>
                                 <span class="timeline-period">Dec 2018 – Jan 2020</span>
                             </div>
-                            <ul class="timeline-points">
-                                <li>Engineered Python ETL scripts for unstructured server logs; automated anomaly
-                                    detection reducing MTTD by <strong>40%</strong> for global airline infrastructure
-                                </li>
-                            </ul>
+                            <p class="timeline-narrative">
+                                Enterprise IT for a global airline. The problem: incidents in 50+ airport applications,
+                                slow detection,
+                                reactive firefighting. I built Python parsers to analyze logs across global check-in
+                                infrastructure,
+                                reducing Mean Time to Detection by <strong>40%</strong>. Earned the <strong>IBM Hall of
+                                    Fame</strong> award.
+                            </p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3 class="timeline-role">Data Analyst</h3>
+                                <h3 class="timeline-role">Operations → Data</h3>
                                 <span class="timeline-company">SankalpTaru Foundation</span>
                                 <span class="timeline-period">2017 – 2021</span>
                             </div>
-                            <ul class="timeline-points">
-                                <li>Fine-tuned EfficientNet-B7 for sapling health diagnosis; automated
-                                    <strong>85%</strong> of audits with confidence-based routing
-                                </li>
-                                <li>Built semantic search with BERT embeddings to match CSR mandates with projects,
-                                    increasing partner conversions by <strong>15%</strong></li>
+                            <p class="timeline-narrative">
+                                Where my data journey began. Started as a Program Executive managing field operations
+                                for 50,000+
+                                ecological assets. Migrated manual logbooks to SQL databases—the organization's first
+                                centralized
+                                dataset. Later applied ML: fine-tuned EfficientNet-B7 for plant health diagnosis
+                                (automating 85%
+                                of audits) and built BERT-based semantic search to match CSR mandates with projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Systems Section -->
+            <section class="section systems" id="systems">
+                <div class="container">
+                    <h2 class="section-title">Selected Systems</h2>
+                    <div class="systems-grid">
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">Agentic RAG Credit Memo System</h3>
+                                <div class="system-tags">
+                                    <span class="tag">ReAct Agents</span>
+                                    <span class="tag">MCP</span>
+                                    <span class="tag">Cross-Encoder</span>
+                                    <span class="tag">BFSI</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Manual credit memo creation took 3 weeks per report with high analyst burden and
+                                        quality variability.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>ReAct-based agentic pipeline with hybrid retrieval, Cross-Encoder re-ranking, and
+                                        web-search tool integration. Model Context Protocol for standardized
+                                        agent-to-data
+                                        interfaces.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">85% reduction in turnaround time (3 weeks → 3 days)</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">Bank Statement Analyzer</h3>
+                                <div class="system-tags">
+                                    <span class="tag">Document AI</span>
+                                    <span class="tag">Multi-Region</span>
+                                    <span class="tag">Scale</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Banks across 18 countries needed automated statement parsing with consistent
+                                        accuracy
+                                        at massive scale.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>Unified extraction architecture with region-specific adapters. Schema-driven
+                                        outputs
+                                        designed for downstream systems. Production-hardened for compliance.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">1M+ documents/month, 98% accuracy, 40% reduction in
+                                        manual
+                                        review</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">HITL Eval Framework for LLMs</h3>
+                                <div class="system-tags">
+                                    <span class="tag">Evaluation</span>
+                                    <span class="tag">Llama-3</span>
+                                    <span class="tag">Mistral</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Entity extraction hallucinations at 23% were unacceptable for BFSI compliance
+                                        requirements.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>Human-in-the-loop evaluation framework benchmarking 8 Dense and MoE models.
+                                        Systematic comparison with domain-specific test suites.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">Hallucinations reduced from 23% to 4% (F1: 0.72 → 0.89)
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">LLM Fine-tuning Pipeline</h3>
+                                <div class="system-tags">
+                                    <span class="tag">QLoRA</span>
+                                    <span class="tag">vLLM</span>
+                                    <span class="tag">PagedAttention</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Off-the-shelf LLMs underperformed on domain-specific BFSI tasks; needed efficient
+                                        fine-tuning and fast inference.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>Llama-3.1 adapters fine-tuned on curated synthetic data (knowledge distillation +
+                                        expert validation). Served via vLLM with PagedAttention optimization.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">22% reduction in P99 latency on production GPUs</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">Text-to-SQL Engine</h3>
+                                <div class="system-tags">
+                                    <span class="tag">NL2SQL</span>
+                                    <span class="tag">Few-shot</span>
+                                    <span class="tag">Schema Linking</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Non-technical users couldn't query complex BFSI database schemas effectively.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>Few-shot prompting with dynamic schema linking. Iterative refinement based on
+                                        execution feedback.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">85% query success rate, 30% user engagement growth</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="system-card">
+                            <div class="system-header">
+                                <h3 class="system-title">Cash-flow Forecasting System</h3>
+                                <div class="system-tags">
+                                    <span class="tag">XGBoost</span>
+                                    <span class="tag">Hybrid</span>
+                                    <span class="tag">Routing</span>
+                                </div>
+                            </div>
+                            <div class="system-body">
+                                <div class="system-section">
+                                    <h4>Problem</h4>
+                                    <p>Mixed transaction types (recurring vs one-time) caused inaccurate cash-flow
+                                        predictions.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Approach</h4>
+                                    <p>Segmented architecture with routing layer. Deterministic handling for recurring
+                                        payments, XGBoost for stochastic transactions.</p>
+                                </div>
+                                <div class="system-section">
+                                    <h4>Outcome</h4>
+                                    <p class="outcome-highlight">18% improvement in forecasting accuracy</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Writing Section -->
+            <section class="section writing" id="writing">
+                <div class="container">
+                    <h2 class="section-title">How I Think</h2>
+                    <div class="writing-content">
+                        <div class="writing-principles">
+                            <p class="writing-lead">I care about:</p>
+                            <ul class="principles-list">
+                                <li><strong>Correctness over cleverness</strong></li>
+                                <li><strong>Systems over scripts</strong></li>
+                                <li><strong>Business impact over benchmarks</strong></li>
+                            </ul>
+                            <p>
+                                I write about applied GenAI, system design trade-offs, and why most AI products fail
+                                after
+                                demos.
+                            </p>
+                        </div>
+                        <div class="writing-posts">
+                            <h3>Selected Writing</h3>
+                            <div class="posts-list">
+                                <a href="#" class="post-item">
+                                    <span class="post-title">Why RAG Systems Fail in Production</span>
+                                    <span class="post-meta">Architecture Patterns</span>
+                                </a>
+                                <a href="#" class="post-item">
+                                    <span class="post-title">Designing AI for Regulated Environments</span>
+                                    <span class="post-meta">BFSI / Compliance</span>
+                                </a>
+                                <a href="#" class="post-item">
+                                    <span class="post-title">The Case for Offline AI Deployments</span>
+                                    <span class="post-meta">Infrastructure</span>
+                                </a>
+                                <a href="#" class="post-item">
+                                    <span class="post-title">Agentic Systems: Beyond the Demo</span>
+                                    <span class="post-meta">System Design</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h3 class="skill-category">AI/ML Techniques</h3>
+                            <ul class="skill-list">
+                                <li>Agentic RAG, ReAct Agents</li>
+                                <li>QLoRA (PEFT), LoRA</li>
+                                <li>Cross-Encoders, Re-ranking</li>
+                                <li>Knowledge Distillation</li>
+                                <li>MoE Models</li>
+                                <li>NLP, Document AI</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-category">Frameworks & Serving</h3>
+                            <ul class="skill-list">
+                                <li>PyTorch, TensorFlow</li>
+                                <li>LangChain, LlamaIndex</li>
+                                <li>vLLM, Model Context Protocol</li>
+                                <li>Hugging Face Transformers</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-category">Infrastructure</h3>
+                            <ul class="skill-list">
+                                <li>Kubernetes, Docker, Podman</li>
+                                <li>OpenShift, FastAPI</li>
+                                <li>AWS, GCP</li>
+                                <li>HA/DR Architecture</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-category">Data & Languages</h3>
+                            <ul class="skill-list">
+                                <li>Python, C++, SQL, R, Bash</li>
+                                <li>Spark, Kafka, NiFi</li>
+                                <li>FAISS, Milvus, PostgreSQL</li>
+                                <li>MongoDB, Redis</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Selected Systems Section -->
-        <section class="section systems" id="systems">
-            <div class="container">
-                <h2 class="section-title">Selected Systems</h2>
-                <div class="systems-grid">
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">Agentic RAG Credit Memo System</h3>
-                            <div class="system-tags">
-                                <span class="tag">ReAct Agents</span>
-                                <span class="tag">MCP</span>
-                                <span class="tag">Cross-Encoder</span>
-                                <span class="tag">BFSI</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Manual credit memo creation took 3 weeks per report with high analyst burden and
-                                    quality variability.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>ReAct-based agentic pipeline with hybrid retrieval, Cross-Encoder re-ranking, and
-                                    web-search tool integration. Model Context Protocol for standardized agent-to-data
-                                    interfaces.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">85% reduction in turnaround time (3 weeks → 3 days)</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">Bank Statement Analyzer</h3>
-                            <div class="system-tags">
-                                <span class="tag">Document AI</span>
-                                <span class="tag">Multi-Region</span>
-                                <span class="tag">Scale</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Banks across 18 countries needed automated statement parsing with consistent accuracy
-                                    at massive scale.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>Unified extraction architecture with region-specific adapters. Schema-driven outputs
-                                    designed for downstream systems. Production-hardened for compliance.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">1M+ documents/month, 98% accuracy, 40% reduction in manual
-                                    review</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">HITL Eval Framework for LLMs</h3>
-                            <div class="system-tags">
-                                <span class="tag">Evaluation</span>
-                                <span class="tag">Llama-3</span>
-                                <span class="tag">Mistral</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Entity extraction hallucinations at 23% were unacceptable for BFSI compliance
-                                    requirements.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>Human-in-the-loop evaluation framework benchmarking 8 Dense and MoE models.
-                                    Systematic comparison with domain-specific test suites.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">Hallucinations reduced from 23% to 4% (F1: 0.72 → 0.89)</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">LLM Fine-tuning Pipeline</h3>
-                            <div class="system-tags">
-                                <span class="tag">QLoRA</span>
-                                <span class="tag">vLLM</span>
-                                <span class="tag">PagedAttention</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Off-the-shelf LLMs underperformed on domain-specific BFSI tasks; needed efficient
-                                    fine-tuning and fast inference.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>Llama-3.1 adapters fine-tuned on curated synthetic data (knowledge distillation +
-                                    expert validation). Served via vLLM with PagedAttention optimization.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">22% reduction in P99 latency on production GPUs</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">Text-to-SQL Engine</h3>
-                            <div class="system-tags">
-                                <span class="tag">NL2SQL</span>
-                                <span class="tag">Few-shot</span>
-                                <span class="tag">Schema Linking</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Non-technical users couldn't query complex BFSI database schemas effectively.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>Few-shot prompting with dynamic schema linking. Iterative refinement based on
-                                    execution feedback.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">85% query success rate, 30% user engagement growth</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="system-card">
-                        <div class="system-header">
-                            <h3 class="system-title">Cash-flow Forecasting System</h3>
-                            <div class="system-tags">
-                                <span class="tag">XGBoost</span>
-                                <span class="tag">Hybrid</span>
-                                <span class="tag">Routing</span>
-                            </div>
-                        </div>
-                        <div class="system-body">
-                            <div class="system-section">
-                                <h4>Problem</h4>
-                                <p>Mixed transaction types (recurring vs one-time) caused inaccurate cash-flow
-                                    predictions.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Approach</h4>
-                                <p>Segmented architecture with routing layer. Deterministic handling for recurring
-                                    payments, XGBoost for stochastic transactions.</p>
-                            </div>
-                            <div class="system-section">
-                                <h4>Outcome</h4>
-                                <p class="outcome-highlight">18% improvement in forecasting accuracy</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Writing Section -->
-        <section class="section writing" id="writing">
-            <div class="container">
-                <h2 class="section-title">How I Think</h2>
-                <div class="writing-content">
-                    <div class="writing-principles">
-                        <p class="writing-lead">I care about:</p>
-                        <ul class="principles-list">
-                            <li><strong>Correctness over cleverness</strong></li>
-                            <li><strong>Systems over scripts</strong></li>
-                            <li><strong>Business impact over benchmarks</strong></li>
-                        </ul>
-                        <p>
-                            I write about applied GenAI, system design trade-offs, and why most AI products fail after
-                            demos.
+            <!-- Contact Section -->
+            <section class="section contact" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="contact-content">
+                        <p class="contact-lead">
+                            Open to discussing GenAI systems, ML engineering challenges, and high-impact opportunities.
                         </p>
-                    </div>
-                    <div class="writing-posts">
-                        <h3>Selected Writing</h3>
-                        <div class="posts-list">
-                            <a href="#" class="post-item">
-                                <span class="post-title">Why RAG Systems Fail in Production</span>
-                                <span class="post-meta">Architecture Patterns</span>
+                        <div class="contact-links">
+                            <a href="mailto:shauryanegi17@gmail.com" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>shauryanegi17@gmail.com</span>
                             </a>
-                            <a href="#" class="post-item">
-                                <span class="post-title">Designing AI for Regulated Environments</span>
-                                <span class="post-meta">BFSI / Compliance</span>
+                            <a href="https://linkedin.com/in/shauryanegi" target="_blank" rel="noopener noreferrer"
+                                class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <span>linkedin.com/in/shauryanegi</span>
                             </a>
-                            <a href="#" class="post-item">
-                                <span class="post-title">The Case for Offline AI Deployments</span>
-                                <span class="post-meta">Infrastructure</span>
-                            </a>
-                            <a href="#" class="post-item">
-                                <span class="post-title">Agentic Systems: Beyond the Demo</span>
-                                <span class="post-meta">System Design</span>
+                            <a href="https://github.com/shauryanegi" target="_blank" rel="noopener noreferrer"
+                                class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                <span>github.com/shauryanegi</span>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section skills" id="skills">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3 class="skill-category">AI/ML Techniques</h3>
-                        <ul class="skill-list">
-                            <li>Agentic RAG, ReAct Agents</li>
-                            <li>QLoRA (PEFT), LoRA</li>
-                            <li>Cross-Encoders, Re-ranking</li>
-                            <li>Knowledge Distillation</li>
-                            <li>MoE Models</li>
-                            <li>NLP, Document AI</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-category">Frameworks & Serving</h3>
-                        <ul class="skill-list">
-                            <li>PyTorch, TensorFlow</li>
-                            <li>LangChain, LlamaIndex</li>
-                            <li>vLLM, Model Context Protocol</li>
-                            <li>Hugging Face Transformers</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-category">Infrastructure</h3>
-                        <ul class="skill-list">
-                            <li>Kubernetes, Docker, Podman</li>
-                            <li>OpenShift, FastAPI</li>
-                            <li>AWS, GCP</li>
-                            <li>HA/DR Architecture</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-category">Data & Languages</h3>
-                        <ul class="skill-list">
-                            <li>Python, C++, SQL, R, Bash</li>
-                            <li>Spark, Kafka, NiFi</li>
-                            <li>FAISS, Milvus, PostgreSQL</li>
-                            <li>MongoDB, Redis</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section contact" id="contact">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="contact-content">
-                    <p class="contact-lead">
-                        Open to discussing GenAI systems, ML engineering challenges, and high-impact opportunities.
-                    </p>
-                    <div class="contact-links">
-                        <a href="mailto:shauryanegi17@gmail.com" class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>shauryanegi17@gmail.com</span>
-                        </a>
-                        <a href="https://linkedin.com/in/shauryanegi" target="_blank" rel="noopener noreferrer"
-                            class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                            <span>linkedin.com/in/shauryanegi</span>
-                        </a>
-                        <a href="https://github.com/shauryanegi" target="_blank" rel="noopener noreferrer"
-                            class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
-                            </svg>
-                            <span>github.com/shauryanegi</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
     </main>
 
     <!-- Footer -->

@@ -720,6 +720,28 @@ em {
     padding-left: var(--space-8);
 }
 
+.experience-intro {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    max-width: 720px;
+    margin-bottom: var(--space-12);
+}
+
+.experience-intro strong {
+    color: var(--accent-primary);
+}
+
+.timeline-narrative {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    font-style: italic;
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--border-accent);
+}
+
 .timeline::before {
     content: '';
     position: absolute;
