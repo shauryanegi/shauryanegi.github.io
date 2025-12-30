@@ -173,7 +173,7 @@
             <div class="container">
                 <h2 class="section-title">Experience</h2>
                 <p class="experience-intro">
-                    My career began in operations—managing logistics for ecological assets. That taught me one thing:
+                    My career began in operations,managing logistics for ecological assets. That taught me one thing:
                     <strong>manual workflows are the enemy of scale</strong>. Since then, I've dedicated my work to
                     building
                     intelligent systems that automate complex decision-making.
@@ -197,7 +197,7 @@
                                     analysts to spend 3 weeks
                                     compiling memos. I architected a ReAct-based pipeline with hybrid retrieval
                                     (Cross-Encoders + web search)
-                                    that cut this to 3 days—an <strong>85% reduction</strong>.</li>
+                                    that cut this to 3 days,an <strong>85% reduction</strong>.</li>
                                 <li><strong>Multi-tenant Inference Architecture:</strong> Designed a vLLM + Kubernetes
                                     serving layer achieving
                                     99.9% uptime and 20% higher throughput for enterprise clients.</li>
@@ -220,7 +220,7 @@
                             <p class="timeline-narrative">
                                 Focused on financial forecasting and LLM optimization. The key insight: not every
                                 problem needs
-                                an LLM—sometimes the best system is a hybrid of heuristics and ML.
+                                an LLM,sometimes the best system is a hybrid of heuristics and ML.
                             </p>
                             <ul class="timeline-points">
                                 <li><strong>Segmented Forecasting Engine:</strong> Cash-flow prediction was failing
@@ -235,7 +235,7 @@
                                     lower P99 latency.</li>
                                 <li><strong>Strategic Leadership:</strong> Led monthly reviews with C-suite, translating
                                     AI capabilities into
-                                    business outcomes—demonstrating <strong>35%</strong> efficiency gains from GenAI
+                                    business outcomes,demonstrating <strong>35%</strong> efficiency gains from GenAI
                                     integration.</li>
                             </ul>
                         </div>
@@ -261,7 +261,7 @@
                                 <li><strong>Text-to-SQL Interface:</strong> Non-technical users struggled with complex
                                     BFSI schemas. Built a
                                     natural language layer using few-shot prompting and schema
-                                    linking—<strong>85%</strong> query success rate,
+                                    linking,<strong>85%</strong> query success rate,
                                     30% engagement growth.</li>
                             </ul>
                         </div>
@@ -277,7 +277,7 @@
                             <p class="timeline-narrative">
                                 Selected as a mentor for Andrew Ng's Deep Learning Specialization. I guide a global
                                 community
-                                through neural networks, CNNs, and Transformers—debugging vectorization logic, backprop
+                                through neural networks, CNNs, and Transformers,debugging vectorization logic, backprop
                                 calculus,
                                 and convergence issues. Teaching forces clarity of thought.
                             </p>
@@ -312,7 +312,7 @@
                             <p class="timeline-narrative">
                                 Where my data journey began. Started as a Program Executive managing field operations
                                 for 50,000+
-                                ecological assets. Migrated manual logbooks to SQL databases—the organization's first
+                                ecological assets. Migrated manual logbooks to SQL databases,the organization's first
                                 centralized
                                 dataset. Later applied ML: fine-tuned EfficientNet-B7 for plant health diagnosis
                                 (automating 85%
@@ -546,45 +546,119 @@
             <!-- Skills Section -->
             <section class="section skills" id="skills">
                 <div class="container">
-                    <h2 class="section-title">Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-group">
-                            <h3 class="skill-category">AI/ML Techniques</h3>
-                            <ul class="skill-list">
-                                <li>Agentic RAG, ReAct Agents</li>
-                                <li>QLoRA (PEFT), LoRA</li>
-                                <li>Cross-Encoders, Re-ranking</li>
-                                <li>Knowledge Distillation</li>
-                                <li>MoE Models</li>
-                                <li>NLP, Document AI</li>
-                            </ul>
+                    <h2 class="section-title">Technical Arsenal</h2>
+                    <p class="skills-intro">
+                        I work extensively with open-source models and cutting-edge inference optimization techniques.
+                        Here's my current stack:
+                    </p>
+                    <div class="skills-detailed">
+                        <div class="skill-category-block">
+                            <h3 class="skill-category-title">LLM Inference & Optimization</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">vLLM</span>
+                                    <span class="skill-desc">High-throughput serving with PagedAttention for efficient
+                                        KV cache management</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">PagedAttention</span>
+                                    <span class="skill-desc">Memory-efficient attention that enables longer context and
+                                        higher batch sizes</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Speculative Decoding</span>
+                                    <span class="skill-desc">Draft model acceleration for 2x+ throughput without quality
+                                        loss</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">AWQ / GPTQ</span>
+                                    <span class="skill-desc">4-bit quantization for production deployment on constrained
+                                        hardware</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Continuous Batching</span>
+                                    <span class="skill-desc">Dynamic request scheduling for optimal GPU
+                                        utilization</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-group">
-                            <h3 class="skill-category">Frameworks & Serving</h3>
-                            <ul class="skill-list">
-                                <li>PyTorch, TensorFlow</li>
-                                <li>LangChain, LlamaIndex</li>
-                                <li>vLLM, Model Context Protocol</li>
-                                <li>Hugging Face Transformers</li>
-                            </ul>
+                        <div class="skill-category-block">
+                            <h3 class="skill-category-title">Model Architectures</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">MoE (Mixture of Experts)</span>
+                                    <span class="skill-desc">Sparse models like Mixtral for efficient large-scale
+                                        inference</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Mamba / State Space</span>
+                                    <span class="skill-desc">Linear-time sequence models for long-context
+                                        applications</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Open-source LLMs</span>
+                                    <span class="skill-desc">Llama-3, Mistral, Qwen, DeepSeek, Phi for production
+                                        workloads</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-group">
-                            <h3 class="skill-category">Infrastructure</h3>
-                            <ul class="skill-list">
-                                <li>Kubernetes, Docker, Podman</li>
-                                <li>OpenShift, FastAPI</li>
-                                <li>AWS, GCP</li>
-                                <li>HA/DR Architecture</li>
-                            </ul>
+                        <div class="skill-category-block">
+                            <h3 class="skill-category-title">Fine-tuning & Adaptation</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">QLoRA / LoRA</span>
+                                    <span class="skill-desc">Parameter-efficient fine-tuning on single GPUs</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Knowledge Distillation</span>
+                                    <span class="skill-desc">Training smaller models from larger teacher outputs</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Hugging Face Ecosystem</span>
+                                    <span class="skill-desc">Transformers, PEFT, Datasets, Accelerate for end-to-end
+                                        workflows</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-group">
-                            <h3 class="skill-category">Data & Languages</h3>
-                            <ul class="skill-list">
-                                <li>Python, C++, SQL, R, Bash</li>
-                                <li>Spark, Kafka, NiFi</li>
-                                <li>FAISS, Milvus, PostgreSQL</li>
-                                <li>MongoDB, Redis</li>
-                            </ul>
+                        <div class="skill-category-block">
+                            <h3 class="skill-category-title">Agentic & RAG Systems</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Model Context Protocol (MCP)</span>
+                                    <span class="skill-desc">Standardized agent-to-data interfaces for tool use</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">ReAct / Chain-of-Thought</span>
+                                    <span class="skill-desc">Reasoning patterns for reliable agent behavior</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Hybrid Retrieval</span>
+                                    <span class="skill-desc">Dense + sparse retrieval with Cross-Encoder
+                                        re-ranking</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">LangChain / LlamaIndex</span>
+                                    <span class="skill-desc">Orchestration frameworks for complex RAG pipelines</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category-block">
+                            <h3 class="skill-category-title">Infrastructure</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Kubernetes / Docker</span>
+                                    <span class="skill-desc">Container orchestration for multi-tenant LLM serving</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Vector Databases</span>
+                                    <span class="skill-desc">FAISS, Milvus, Qdrant, pgvector for similarity
+                                        search</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">FastAPI / Go</span>
+                                    <span class="skill-desc">High-performance APIs for inference endpoints</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
